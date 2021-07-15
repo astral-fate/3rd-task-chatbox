@@ -1,17 +1,16 @@
-# GUI for a robotic base 
-A web-base GUI for both a robotic base and a robotic arm. GUI provides severals slider to control the arm motor motion in degrees with 3 button: one to save the degrees' values into the database, one to turn the arm on and one to turn the arm off. the GUI also provides controllers for the mobile base. it has 4 buttons for direction (forward, backward, left and right) with additional ON/OFF buttons.
-The GUI support different screen sizes, desktops, tablets and phones. 
+# IBM Watson Assistant (chatbot) 
+It's a project that use IBM Watson Assistant service to integrate a chatbot to the [former GUI of the robot base ](https://github.com/FatimahJabr/robot_base_GUI). The chatbot is trained to answer the frequently asked questions about products and shipping of [Zukhrod Store ](https://salla.sa/zukhrofstore/).
 
 ## content:
 
-### GUI screenshoot 
-a screenshoot of the GUI 
-
-### mobile view video 
-a video to show how the website adapt according to the screen size
- 
 ### index.html 
-The html of the GUI
+The html of the website, were it embed the chat bot. 
+
+### demo.mov
+a demo of a conversation with the chatbot
+
+### skill-FQA.json
+An exported version of the chatbot
 
 ### retrieve.php
 a php file to retrieve the data from the database for further processing 
@@ -25,3 +24,4 @@ the style sheet, to style the GUI.
 
 ### submit.pup
 the php file that will process the submission of the GUI. 
+
