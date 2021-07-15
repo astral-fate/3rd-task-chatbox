@@ -1,0 +1,648 @@
+{
+  "intents": [
+    {
+      "intent": "availability",
+      "examples": [
+        {
+          "text": "do you still have planners ?"
+        },
+        {
+          "text": "do you still sell the stickers?"
+        },
+        {
+          "text": "is the calendar still available ?"
+        },
+        {
+          "text": "is the planner available to buy?"
+        },
+        {
+          "text": "is there any planner left ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bye",
+      "examples": [
+        {
+          "text": "bye"
+        },
+        {
+          "text": "good bye"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "salam"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "order",
+      "examples": [
+        {
+          "text": "can i buy 2 planers?"
+        },
+        {
+          "text": "how can i buy from the store?"
+        },
+        {
+          "text": "how can I order from the store ?"
+        },
+        {
+          "text": "i need three stickers please"
+        },
+        {
+          "text": "i wanna order from the store"
+        },
+        {
+          "text": "i want to buy 2 stickers and one calendar please"
+        },
+        {
+          "text": "i want to buy one planner"
+        },
+        {
+          "text": "i want to order from the store"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "payment",
+      "examples": [
+        {
+          "text": "can i pay cash ?"
+        },
+        {
+          "text": "can i transfer the money ?"
+        },
+        {
+          "text": "does the store provide cash on delivery service ?"
+        },
+        {
+          "text": "how can i pay ?"
+        },
+        {
+          "text": "how can i pay for my order"
+        },
+        {
+          "text": "i want to pay cash on delivery"
+        },
+        {
+          "text": "what are the payment methods ?"
+        },
+        {
+          "text": "what is the available payment methods ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "price",
+      "examples": [
+        {
+          "text": "how much does the stickers coast ?"
+        },
+        {
+          "text": "how much is the planner?"
+        },
+        {
+          "text": "what is the coast of the calendar ?"
+        },
+        {
+          "text": "what is the price of the planner ?"
+        },
+        {
+          "text": "what is the total of ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "product_information",
+      "examples": [
+        {
+          "text": "does the planner has multiple cover pages ?"
+        },
+        {
+          "text": "dose the planner comes with the stickers ?"
+        },
+        {
+          "text": "how many page is the stickers ?"
+        },
+        {
+          "text": "i want pics of the calendar"
+        },
+        {
+          "text": "i want picture of the planner"
+        },
+        {
+          "text": "what does the store sells ?"
+        },
+        {
+          "text": "what do you sell ?"
+        },
+        {
+          "text": "what is the content of the planner ?"
+        },
+        {
+          "text": "what is the size of the calendar ?"
+        },
+        {
+          "text": "what is your products ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "shipping_price",
+      "examples": [
+        {
+          "text": "how much does it coast to ship to Jeddah?"
+        },
+        {
+          "text": "how much is the shipping?"
+        },
+        {
+          "text": "how much is the shipping coast ?"
+        },
+        {
+          "text": "shipping coast"
+        },
+        {
+          "text": "shipping fees"
+        },
+        {
+          "text": "shipping price"
+        },
+        {
+          "text": "what is the coast to ship to makkah ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "shipping_time",
+      "examples": [
+        {
+          "text": "how many days dose shipment takes ?"
+        },
+        {
+          "text": "how many days will my shipment take?"
+        },
+        {
+          "text": "how much does take to ship to makkah ?"
+        },
+        {
+          "text": "how much does the shipping takes ?"
+        },
+        {
+          "text": "shipping duration"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "shippping_company",
+      "examples": [
+        {
+          "text": "how do you ship the orders ?"
+        },
+        {
+          "text": "what company do you use to ship the orders ?"
+        },
+        {
+          "text": "what is the name of the shipping company"
+        },
+        {
+          "text": "what is the shipping company ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thanks",
+      "examples": [
+        {
+          "text": "ok thanks"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thanx"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "product",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "calendar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "planner",
+          "synonyms": [
+            "agenda ",
+            "planner "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sticker",
+          "synonyms": [
+            "stickers "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1625551423967",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "greeting ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hello"
+              },
+              {
+                "text": "hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "dialog_node": "node_2_1625545085315",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "shipping duration ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "normally it takes 2 to 7 days. but it mainly depend on the shipping company "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#shipping_time",
+      "dialog_node": "node_2_1625613938311",
+      "previous_sibling": "node_9_1625610844256"
+    },
+    {
+      "type": "standard",
+      "title": "shipping company",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "we ship via \"Quick\" shipping service.\nyou can reach them by their website:\nhttps://quick.sa.com"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#shippping_company",
+      "dialog_node": "node_2_1625614484656",
+      "previous_sibling": "node_2_1625613938311"
+    },
+    {
+      "type": "standard",
+      "title": "thanks ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "welcome :) "
+              },
+              {
+                "text": "anytime :) "
+              },
+              {
+                "text": "I'm glad to be of assistant :) "
+              },
+              {
+                "text": "you're welcome"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#thanks",
+      "dialog_node": "node_4_1625551323588",
+      "previous_sibling": "node_2_1625614484656"
+    },
+    {
+      "type": "standard",
+      "title": "general informations about the products",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can visit our website to know the details of any product: \nhttps://salla.sa/zukhrofstore/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#product_information",
+      "dialog_node": "node_5_1625545890196",
+      "previous_sibling": "node_2_1625545085315"
+    },
+    {
+      "type": "standard",
+      "title": "calendar price ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "the calendar is 10 SR. \nyou can buy it from the website: https://salla.sa/zukhrofstore/ "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1625550940371",
+      "conditions": "@product:calendar",
+      "dialog_node": "node_6_1625551107150",
+      "previous_sibling": "node_7_1625550967211"
+    },
+    {
+      "type": "standard",
+      "title": "Availability ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can check our website: \nhttps://salla.sa/zukhrofstore/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#availability",
+      "dialog_node": "node_6_1625551692452",
+      "previous_sibling": "node_8_1625550940371"
+    },
+    {
+      "type": "standard",
+      "title": "order ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can order from our website: \nhttps://salla.sa/zukhrofstore/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#order",
+      "dialog_node": "node_6_1625551835726",
+      "previous_sibling": "node_6_1625551692452"
+    },
+    {
+      "type": "standard",
+      "title": "planner price ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "the planner is on sales now, it's only 35 SR ! \nyou can buy it from the website: https://salla.sa/zukhrofstore/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1625550940371",
+      "conditions": "@product:planner",
+      "dialog_node": "node_7_1625550967211"
+    },
+    {
+      "type": "standard",
+      "title": "stickers price",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "the stickers are 6 SR. \nyou can buy it from the website: https://salla.sa/zukhrofstore/ "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1625550940371",
+      "conditions": "@product:sticker",
+      "dialog_node": "node_7_1625551195701",
+      "previous_sibling": "node_6_1625551107150"
+    },
+    {
+      "type": "standard",
+      "title": "price ",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1625550967211"
+      },
+      "conditions": "#price",
+      "dialog_node": "node_8_1625550940371",
+      "previous_sibling": "node_5_1625545890196"
+    },
+    {
+      "type": "standard",
+      "title": "bye",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "be safe :) "
+              },
+              {
+                "text": "bye bye "
+              },
+              {
+                "text": "bye "
+              },
+              {
+                "text": "have a nice day :)"
+              },
+              {
+                "text": "good bye "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#bye",
+      "dialog_node": "node_8_1625551423967",
+      "previous_sibling": "node_4_1625551323588"
+    },
+    {
+      "type": "standard",
+      "title": "shipping price",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "normally it coasts only 27 SR, but in special cases it coast 42 SR. \nthe price will appear when you proceed to check out. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#shipping_price",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1625610844256",
+      "previous_sibling": "node_6_1625551835726"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to Zukhrof store :)\nHow can I help you ? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "FQA",
+  "language": "en",
+  "description": "providing a quick answers to the frequently asked questions"
+}
